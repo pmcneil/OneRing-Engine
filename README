@@ -3,8 +3,8 @@ One Ring - Scripting Rules Engine
 One Ring isn't like other "Rules Engines", it's meant to be used as a web service for multiple applications
 to gain access to scripted processing of arbitrary parameters.
 
-This is the rule engine part of One Ring ( http://nerderg.com/One+Ring ) split out to enable integrated rule testing
-in IDEs using junit or a groovy script.
+This is the rule engine part of One Ring ( http://nerderg.com/One+Ring https://github.com/pmcneil/One-Ring )
+split out to enable integrated rule testing in IDEs using junit or a groovy script.
 
 One Ring is Copyright 2010, 2011 Peter McNeil. It was developed in association with Legal Aid Commission (ACT) as
 part of their eGrants project. Legal Aid Commission (ACT) has graciously allowed me to open source this code under
