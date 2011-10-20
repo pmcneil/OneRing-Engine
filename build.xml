@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="onering" default="all">
+
+  <property environment="env"/>
+  <property file="build.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+
+  <!-- Compiler options -->
+
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.pyc/**"/>
+    <exclude name="**/.pyo/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/*.orig/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.ear"/>
+    <include name="*.zip"/>
+    <include name="*.swc"/>
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <include name="**/?*.properties"/>
+    <include name="**/?*.xml"/>
+    <include name="**/?*.gif"/>
+    <include name="**/?*.png"/>
+    <include name="**/?*.jpeg"/>
+    <include name="**/?*.jpg"/>
+    <include name="**/?*.html"/>
+    <include name="**/?*.dtd"/>
+    <include name="**/?*.tld"/>
+    <include name="**/?*.ftl"/>
+  </patternset>
+
+  <!-- JDK definitions -->
+
+  <property name="jdk.bin.1.6" value="${env.JDK_HOME}/bin"/>
+  <path id="jdk.classpath.1.6">
+    <fileset dir="${env.JDK_HOME}">
+      <include name="jre/lib/alt-rt.jar"/>
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/rt.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+    </fileset>
+  </path>
+
+  <property name="project.jdk.home" value="${env.JDK_HOME}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.6}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.6"/>
+
+
+  <!-- Global Libraries -->
+
+  <path id="library.groovy-1.7.10.classpath">
+    <fileset dir="${env.GROOVY_HOME}/lib">
+      <patternset refid="library.patterns"/>
+    </fileset>
+  </path>
+
+  <!-- Register Custom Compiler Taskdefs -->
+  <target name="register.custom.compilers">
+    <property name="grooovyc.task.sdk" value="library.groovy-1.7.10.classpath"/>
+    <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc" classpathref="library.groovy-1.7.10.classpath"/>
+  </target>
+
+  <!-- Modules -->
+
+
+  <!-- Module oneRing -->
+
+  <dirname property="module.onering.basedir" file="${ant.file}"/>
+
+
+  <property name="module.jdk.home.onering" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.onering" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.onering" value="${project.jdk.classpath}"/>
+
+  <property name="compiler.args.onering" value="${compiler.args}"/>
+
+  <property name="onering.output.dir" value="${module.onering.basedir}/out/production/oneRing"/>
+  <property name="onering.testoutput.dir" value="${module.onering.basedir}/out/test/oneRing"/>
+
+  <path id="onering.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+
+  <path id="onering.module.production.classpath">
+    <path refid="${module.jdk.classpath.onering}"/>
+    <path refid="library.groovy-1.7.10.classpath"/>
+  </path>
+
+  <path id="onering.runtime.production.module.classpath">
+    <pathelement location="${onering.output.dir}"/>
+    <path refid="library.groovy-1.7.10.classpath"/>
+  </path>
+
+  <path id="onering.module.classpath">
+    <path refid="${module.jdk.classpath.onering}"/>
+    <pathelement location="${onering.output.dir}"/>
+    <path refid="library.groovy-1.7.10.classpath"/>
+  </path>
+
+  <path id="onering.runtime.module.classpath">
+    <pathelement location="${onering.testoutput.dir}"/>
+    <pathelement location="${onering.output.dir}"/>
+    <path refid="library.groovy-1.7.10.classpath"/>
+  </path>
+
+
+  <patternset id="excluded.from.module.onering">
+    <patternset refid="ignored.files"/>
+  </patternset>
+
+  <patternset id="excluded.from.compilation.onering">
+    <patternset refid="excluded.from.module.onering"/>
+  </patternset>
+
+  <path id="onering.module.sourcepath">
+    <dirset dir="${module.onering.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+
+  <path id="onering.module.test.sourcepath">
+    <dirset dir="${module.onering.basedir}">
+      <include name="test"/>
+    </dirset>
+  </path>
+
+
+  <target name="compile.module.onering" depends="compile.module.onering.production,compile.module.onering.tests" description="Compile module oneRing"/>
+
+  <target name="compile.module.onering.production" depends="register.custom.compilers" description="Compile module oneRing; production classes">
+    <mkdir dir="${onering.output.dir}"/>
+    <groovyc destdir="${onering.output.dir}" fork="yes">
+      <src refid="onering.module.sourcepath"/>
+      <classpath refid="onering.module.production.classpath"/>
+      <patternset refid="excluded.from.compilation.onering"/>
+      <javac debug="${compiler.debug}">
+        <compilerarg line="${compiler.args.onering}"/>
+      </javac>
+    </groovyc>
+
+    <copy todir="${onering.output.dir}">
+      <fileset dir="${module.onering.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="compile.module.onering.tests" depends="register.custom.compilers,compile.module.onering.production"
+          description="compile module oneRing; test classes" unless="skip.tests">
+    <mkdir dir="${onering.testoutput.dir}"/>
+    <groovyc destdir="${onering.testoutput.dir}" fork="yes">
+      <src refid="onering.module.test.sourcepath"/>
+      <classpath refid="onering.module.classpath"/>
+      <patternset refid="excluded.from.compilation.onering"/>
+      <javac debug="${compiler.debug}">
+        <compilerarg line="${compiler.args.onering}"/>
+      </javac>
+    </groovyc>
+
+    <copy todir="${onering.testoutput.dir}">
+      <fileset dir="${module.onering.basedir}/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="clean.module.onering" description="cleanup module">
+    <delete dir="${onering.output.dir}"/>
+    <delete dir="${onering.testoutput.dir}"/>
+  </target>
+
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+
+  <target name="clean" depends="clean.module.onering" description="cleanup all"/>
+
+  <target name="build.modules" depends="init, clean, compile.module.onering" description="build all modules"/>
+
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.engine:jar" value="${basedir}/out/artifacts/engine_jar"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="temp.jar.path.engine.jar" value="${artifacts.temp.dir}/engine.jar"/>
+  </target>
+
+  <target name="artifact.engine:jar" depends="init.artifacts, compile.module.onering" description="Build &apos;engine:jar&apos; artifact">
+    <property name="artifact.temp.output.engine:jar" value="${artifacts.temp.dir}/engine_jar"/>
+    <mkdir dir="${artifact.temp.output.engine:jar}"/>
+    <jar destfile="${temp.jar.path.engine.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset dir="${onering.output.dir}"/>
+    </jar>
+    <copy file="${temp.jar.path.engine.jar}" tofile="${artifact.output.engine:jar}/engine.jar"/>
+  </target>
+
+  <target name="build.all.artifacts" depends="artifact.engine:jar" description="Build all artifacts">
+    <mkdir dir="${artifact.output.engine:jar}"/>
+    <copy todir="${artifact.output.engine:jar}">
+      <fileset dir="${artifact.temp.output.engine:jar}"/>
+    </copy>
+
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+
+  <target name="test" depends="clean, build.modules" description="run unit tests">
+
+    <junit printsummary="yes" fork="yes" haltonfailure="yes">
+      <classpath refid="onering.runtime.module.classpath">
+      </classpath>
+      <formatter type="xml"/>
+      <test name="com.nerderg.rules.RulesEngineTests"/>
+    </junit>
+  </target>
+
+  <target name="all" depends="test, build.all.artifacts" description="build all"/>
+</project>
