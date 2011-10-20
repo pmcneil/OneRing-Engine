@@ -1,0 +1,4195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="foo-foo" name="com.nerderg.rules.RulesEngineTests" tests="5" time="1.865" timestamp="2011-10-20T04:56:19">
+  <properties>
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="env.SESSION_MANAGER" value="local/foo-foo:@/tmp/.ICE-unix/13311,unix/foo-foo:/tmp/.ICE-unix/13311" />
+    <property name="env.LESSOPEN" value="| /usr/bin/lesspipe %s" />
+    <property name="compiler.debug" value="on" />
+    <property name="project.jdk.classpath" value="jdk.classpath.1.6" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Server Compiler" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/resources.jar:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/rt.jar:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/sunrsasign.jar:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/jsse.jar:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/jce.jar:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/charsets.jar:/home/pmcneil/apps/java/jdk1.6.0_21/jre/classes" />
+    <property name="compiler.args" value="" />
+    <property name="env.PWD" value="/home/pmcneil/devel/oneRing" />
+    <property name="env.XDG_SESSION_COOKIE" value="d008f37bcfae224092963b314c824509-1319067622.348898-118615357" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="env.LANG" value="en_AU.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.home" value="/home/pmcneil/apps/ant/apache-ant-1.8.0/" />
+    <property name="module.onering.basedir" value="/home/pmcneil/devel/oneRing" />
+    <property name="java.runtime.version" value="1.6.0_21-b06" />
+    <property name="env.APPENGINE_HOME" value="/home/pmcneil/apps/gae/appengine-java-sdk-1.3.3.1" />
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/gnome-shell.default.path" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="user.name" value="pmcneil" />
+    <property name="env._" value="/usr/bin/ant" />
+    <property name="grooovyc.task.sdk" value="library.groovy-1.7.10.classpath" />
+    <property name="env.USER" value="pmcneil" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="module.jdk.bin.onering" value="/home/pmcneil/apps/java/jdk1.6.0_21/bin" />
+    <property name="env.DESKTOP_SESSION" value="gnome-shell" />
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/gnome-shell:/usr/share/gnome:/usr/local/share/:/usr/share/" />
+    <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+    <property name="env.PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/pmcneil/bin:/home/pmcneil/apps/java/jdk1.6.0_21/bin:/home/pmcneil/apps/java/jdk1.6.0_21/jre/bin:/home/pmcneil/apps/ant/apache-ant-1.8.0//bin:/home/pmcneil/apps/groovy/groovy-1.8.1/bin:/home/pmcneil/apps/grails/grails-1.3.7/bin:/home/pmcneil/apps/maven/apache-maven-2.2.1/bin:/home/pmcneil/apps/griffon/bin:/home/pmcneil/apps/gae/appengine-java-sdk-1.3.3.1/bin:/home/pmcneil/apps/android/android-sdk-linux_86/tools:/home/pmcneil/apps/android/android-sdk-linux_86/platform-tools:/home/pmcneil/apps/atlassian/atlassian-plugin-sdk-3.1.3/bin:/home/pmcneil/apps/gradle/gradle-1.0-milestone-3/bin" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="GNOME" />
+    <property name="user.language" value="en" />
+    <property name="sun.boot.library.path" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="all" />
+    <property name="ant.project.name" value="onering" />
+    <property name="env.LC_CTYPE" value="en_AU.UTF-8" />
+    <property name="java.version" value="1.6.0_21" />
+    <property name="user.timezone" value="" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-kmtxQWhnSu,guid=d6171b966ab7c241a2910c3800001fab" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env.SSH_AGENT_PID" value="13369" />
+    <property name="java.endorsed.dirs" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/endorsed" />
+    <property name="env.JDK_HOME" value="/home/pmcneil/apps/java/jdk1.6.0_21" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="1" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="project.jdk.bin" value="/home/pmcneil/apps/java/jdk1.6.0_21/bin" />
+    <property name="env.GROOVY_HOME" value="/home/pmcneil/apps/groovy/groovy-1.7.10" />
+    <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+    <property name="java.class.version" value="50.0" />
+    <property name="env.GDMSESSION" value="gnome-shell" />
+    <property name="onering.output.dir" value="/home/pmcneil/devel/oneRing/out/production/oneRing" />
+    <property name="user.country" value="AU" />
+    <property name="env.GNOME_KEYRING_PID" value="13302" />
+    <property name="java.home" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre" />
+    <property name="env.ANDROID_HOME" value="/home/pmcneil/apps/android/android-sdk-linux_86" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/pmcneil/devel/oneRing/build.xml" />
+    <property name="os.version" value="3.0.0-12-generic" />
+    <property name="jdk.bin.1.6" value="/home/pmcneil/apps/java/jdk1.6.0_21/bin" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="17.0-b16" />
+    <property name="env.LANGUAGE" value="en_AU:en" />
+    <property name="ant.library.dir" value="/home/pmcneil/apps/ant/apache-ant-1.8.0//lib" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session1" />
+    <property name="env.JAVA_HOME" value="/home/pmcneil/apps/java/jdk1.6.0_21" />
+    <property name="env.TERM" value="xterm" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="module.jdk.classpath.onering" value="jdk.classpath.1.6" />
+    <property name="compiler.args.onering" value="" />
+    <property name="env.GAE_HOME" value="/home/pmcneil/apps/gae/appengine-java-sdk-1.3.3.1" />
+    <property name="compiler.max.memory" value="128m" />
+    <property name="user.home" value="/home/pmcneil" />
+    <property name="env.OLDPWD" value="/home/pmcneil" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="ant.file.type.onering" value="file" />
+    <property name="project.jdk.home" value="/home/pmcneil/apps/java/jdk1.6.0_21" />
+    <property name="env.WINDOWID" value="81788934" />
+    <property name="java.library.path" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/amd64/server:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/amd64:/home/pmcneil/apps/java/jdk1.6.0_21/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="env.SVN_EDITOR" value="/usr/bin/vim" />
+    <property name="env.LC_MESSAGES" value="en_AU.UTF-8" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="ant.version" value="Apache Ant version 1.8.0 compiled on February 1 2010" />
+    <property name="java.class.path" value="/home/pmcneil/devel/oneRing/out/test/oneRing:/home/pmcneil/devel/oneRing/out/production/oneRing:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/ant-1.8.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/ant-antlr-1.8.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/ant-junit-1.8.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/ant-launcher-1.8.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/antlr-2.7.7.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/asm-3.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/asm-analysis-3.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/asm-commons-3.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/asm-tree-3.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/asm-util-3.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/bsf-2.4.0.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/commons-cli-1.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/commons-logging-1.1.1.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/groovy-1.7.10.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/ivy-2.2.0.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/jansi-1.2.1.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/jline-0.9.94.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/jsp-api-2.0.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/junit-4.8.2.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/servlet-api-2.4.jar:/home/pmcneil/apps/groovy/groovy-1.7.10/lib/xstream-1.3.1.jar:/home/pmcneil/apps/ant/apache-ant-1.8.0/lib/ant-launcher.jar:/home/pmcneil/apps/ant/apache-ant-1.8.0/lib/ant.jar:/home/pmcneil/apps/ant/apache-ant-1.8.0/lib/ant-junit.jar" />
+    <property name="env.ATLASSIAN_JDK_HOME" value="/home/pmcneil/apps/atlassian/atlassian-plugin-sdk-3.1.3" />
+    <property name="env.UBUNTU_MENUPROXY" value="" />
+    <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+    <property name="onering.testoutput.dir" value="/home/pmcneil/devel/oneRing/out/test/oneRing" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="env.GRIFFON_HOME" value="/home/pmcneil/apps/griffon" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/home/pmcneil" />
+    <property name="env.ANT_HOME" value="/home/pmcneil/apps/ant/apache-ant-1.8.0/" />
+    <property name="env.LD_LIBRARY_PATH" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/amd64/server:/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/amd64:/home/pmcneil/apps/java/jdk1.6.0_21/jre/../lib/amd64" />
+    <property name="env.LS_COLORS" value="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/keyring-w0zYNx/ssh" />
+    <property name="env.MAVEN_OPTS" value="-Xmx256M" />
+    <property name="env.IDEA_JDK" value="/home/pmcneil/apps/java/jdk1.6.0_21" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="os.arch" value="amd64" />
+    <property name="compiler.generate.no.warnings" value="off" />
+    <property name="java.ext.dirs" value="/home/pmcneil/apps/java/jdk1.6.0_21/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="env.MAVEN_HOME" value="/home/pmcneil/apps/maven/apache-maven-2.2.1" />
+    <property name="env.XAUTHORITY" value="/home/pmcneil/.Xauthority" />
+    <property name="user.dir" value="/home/pmcneil/devel/oneRing" />
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/gnome-shell.mandatory.path" />
+    <property name="env.SPEECHD_PORT" value="7560" />
+    <property name="env.GTK_MODULES" value="canberra-gtk-module:canberra-gtk-module" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.COLORTERM" value="gnome-terminal" />
+    <property name="basedir" value="/home/pmcneil/devel/oneRing" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="ant.core.lib" value="/home/pmcneil/apps/ant/apache-ant-1.8.0/lib/ant.jar" />
+    <property name="env.USERNAME" value="pmcneil" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.DEFAULT_PATH" value="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games" />
+    <property name="env.LC_COLLATE" value="en_AU.UTF-8" />
+    <property name="env.GRAILS_HOME" value="/home/pmcneil/apps/grails/grails-1.3.7" />
+    <property name="module.jdk.home.onering" value="/home/pmcneil/apps/java/jdk1.6.0_21" />
+    <property name="ant.file.onering" value="/home/pmcneil/devel/oneRing/build.xml" />
+    <property name="env.GPG_AGENT_INFO" value="/tmp/keyring-w0zYNx/gpg:0:1" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="env.GNOME_KEYRING_CONTROL" value="/tmp/keyring-w0zYNx" />
+    <property name="ant.project.invoked-targets" value="all" />
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-gnome-shell:/etc/xdg" />
+    <property name="env.LESSCLOSE" value="/usr/bin/lesspipe %s %s" />
+  </properties>
+  <testcase classname="com.nerderg.rules.RulesEngineTests" name="testProcessRulesScript" time="0.754" />
+  <testcase classname="com.nerderg.rules.RulesEngineTests" name="testRunRules" time="0.103" />
+  <testcase classname="com.nerderg.rules.RulesEngineTests" name="testRunRulesAbortOnFail" time="0.07" />
+  <testcase classname="com.nerderg.rules.RulesEngineTests" name="testTestRulesDsl" time="0.177" />
+  <testcase classname="com.nerderg.rules.RulesEngineTests" name="testBenchmarkRunRules" time="0.708" />
+  <system-out><![CDATA[Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset milkshake
+- singer is Kelis
+Runing ruleset milkshake
+- singer is Kelis
+Runing ruleset milkshake
+- singer is Kelis
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Rules run in 5ms
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Rules run in 2ms
+Runing ruleset Means Test
+Fact income not found.
+Rules run in 1ms
+[expenses:900, error:Fact income not found.]
+Runing ruleset Means Test
+Fact income not found. Fact expenses not found.
+Rules run in 5ms
+[error:Fact income not found. Fact expenses not found.]
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+-- failing: nett income3 result false + fail on error set
+Runing ruleset Means Test
+- nett income
+-- failing: nett income result false + fail on error set
+Runing ruleset Means Test
+- nett income
+Runing ruleset Means Test
+- nett income
+Runing ruleset test
+- quantity within range
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Runing ruleset Means Test
+- nett income
+- nett income2
+- nett income3
+Rules run 1000 times in avg 0.643ms each
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
