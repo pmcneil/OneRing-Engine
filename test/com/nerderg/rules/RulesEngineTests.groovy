@@ -320,14 +320,36 @@ ruleset("milkshake") {
                 message (["invalid quantity"])
             }
         }
+        ruleset('checkRef') {
+            require(['ref'])
+            rule('should be able to reference map in ref')  {
+                when {
+                    ref.value == 23
+                }
+                then {
+                    ref.yes = true
+                }
+                otherwise {
+                    ref.yes = false
+                }
+            }
+
+            test(ref: [value: 23]) {
+                ref([value: 23,yes: true])
+            }
+            test(ref: [value: 2]) {
+                ref([value: 2, yes: false])
+            }
+    }
         """
         ruleSets = RulesEngine.processRules(ruleDsl)
         assert ruleSets
-        assert ruleSets.size() == 1
-        ruleSet = ruleSets[0]
+        assert ruleSets.size() == 2
 
-        fails = RulesEngine.testRuleset(ruleSet)
-        assert fails.empty
+        ruleSets.each { rs ->
+            fails = RulesEngine.testRuleset(rs)
+            assert fails.empty
+        }
     }
 
 

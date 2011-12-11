@@ -34,9 +34,9 @@ ruleset('checkRef') {
     }
 
     test(ref: [value: 23]) {
-            yes true
+        ref([value: 23, yes: true])
     }
     test(ref: [value: 2]) {
-        yes false
+        ref([value: 2, yes: false])
     }
 }
