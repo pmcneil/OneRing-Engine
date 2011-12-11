@@ -26,6 +26,11 @@ class RulesetDelegate {
     List tests = []
     boolean abortOnFail = false
 
+    def propertyMissing(String name) {
+        //ignore missing properties since they will be referenced against facts
+        println "Missing property $name ignored."
+    }
+    
     def require(List params) {
         required = params
     }
@@ -48,10 +53,10 @@ class RulesetDelegate {
     }
 
     boolean runRules(Map fact, boolean debug = false) {
-        println "Runing ruleset $name"
+//        println "Runing ruleset $name"
         if (checkRequired(fact)) {
             for (Closure ruleClosure in rules) {
-                println "- $ruleClosure.name"
+//                println "- $ruleClosure.name"
                 ruleClosure.fact = fact
                 ruleClosure()
                 if (!(ruleClosure.result) && abortOnFail) {
