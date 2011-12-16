@@ -263,7 +263,7 @@ ruleset("milkshake") {
 
         List<String> fails = RulesEngine.testRuleset(ruleSet)
         assert !fails.empty
-        assert fails[0].startsWith("expected 'incomeTest' to be 'passed' in test data")//[income:900, expenses:500, nett_income:400, incomeTest:failed]"
+        assert fails[0].startsWith("In test 1\nexpected 'incomeTest'\nto be    'passed'")//[income:900, expenses:500, nett_income:400, incomeTest:failed]"
 
         ruleDsl = """ruleset("Means Test") {
             require(['income', 'expenses'])

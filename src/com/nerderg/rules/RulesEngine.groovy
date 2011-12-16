@@ -41,13 +41,20 @@ class RulesEngine {
 
     static List testRuleset(RulesetDelegate rules) {
         def fails = []
+        int i = 0
         rules.tests.each { testData ->
+            i++
             if (rules.checkRequired(testData.input)) {
                 Map copy = new HashMap(testData.input)
                 rules.runRules(copy)
                 testData.expect.each {
                     if (copy[it.key] != it.value) {
-                        fails.add("expected '${it.key}' to be '${it.value}' in test data ${copy}")
+                        fails.add("""In test $i
+expected '${it.key}'
+to be    '${it.value}'
+but was  '${copy[it.key]}'
+in test data '${copy}'
+""")
                     }
                 }
             } else {
