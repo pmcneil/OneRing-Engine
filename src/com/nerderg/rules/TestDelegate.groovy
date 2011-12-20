@@ -20,9 +20,9 @@ package com.nerderg.rules
  */
 class TestDelegate {
 
-    def facts
+    def fact
 
     def methodMissing(String name, args) {
-        assert facts[name] == args[0]
+        assert fact[name] == args[0]
     }
 }

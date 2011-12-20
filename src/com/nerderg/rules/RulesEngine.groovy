@@ -47,11 +47,11 @@ class RulesEngine {
             if (rules.checkRequired(testData.input)) {
                 Map copy = new HashMap(testData.input)
                 rules.runRules(copy)
-                testData.expect.delegate.facts = copy
+                testData.expect.delegate.fact = copy
                 try {
                     testData.expect()
                 } catch (AssertionError e) {
-                    fails.add(e.message)
+                    fails.add("Test $i\n$e.message" as String)
                 }
             } else {
                 fails.add(testData.input.error)

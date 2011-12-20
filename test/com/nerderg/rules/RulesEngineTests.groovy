@@ -264,7 +264,15 @@ ruleset("milkshake") {
 
         List<String> fails = RulesEngine.testRuleset(ruleSet)
         assert !fails.empty
-        assert fails[0].startsWith("assert facts[name]")
+        assert fails[0] == """Test 1
+assert fact[name] == args[0]
+       |   ||     |  |   |
+       |   ||     |  |   passed
+       |   ||     |  [passed]
+       |   ||     false
+       |   |incomeTest
+       |   failed
+       [nett_income:400, incomeTest:failed, income:900, expenses:500]"""
 
         ruleDsl = """ruleset("Means Test") {
             require(['income', 'expenses'])
@@ -336,8 +344,8 @@ ruleset("milkshake") {
             }
 
             test(ref: [value: 23]) {
-                assert facts.ref.value == 23
-                assert facts.ref.yes == true
+                assert fact.ref.value == 23
+                assert fact.ref.yes == true
             }
             
             test(ref: [value: 2]) {
