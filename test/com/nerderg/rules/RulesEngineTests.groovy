@@ -31,7 +31,8 @@ class RulesEngineTests extends GroovyTestCase {
         assert ruleSets[0].name == "Means Test"
         assert ruleSets[0].rules.size() == 3
         assert ruleSets[0].required == ['income', 'expenses']
-        assert ruleSets[0].tests == [[input: [income: 900, expenses: 501], expect: [incomeTest: 'passed', nett_income: 399]]]
+        assert ruleSets[0].tests[0].input == [income: 900, expenses: 501]
+
         ruleSets.each { ruleSet ->
             List fails = RulesEngine.testRuleset(ruleSet)
             assert fails.isEmpty()
@@ -263,7 +264,7 @@ ruleset("milkshake") {
 
         List<String> fails = RulesEngine.testRuleset(ruleSet)
         assert !fails.empty
-        assert fails[0].startsWith("In test 1\nexpected 'incomeTest'\nto be    'passed'")//[income:900, expenses:500, nett_income:400, incomeTest:failed]"
+        assert fails[0].startsWith("assert facts[name]")
 
         ruleDsl = """ruleset("Means Test") {
             require(['income', 'expenses'])
@@ -335,8 +336,10 @@ ruleset("milkshake") {
             }
 
             test(ref: [value: 23]) {
-                ref([value: 23,yes: true])
+                assert facts.ref.value == 23
+                assert facts.ref.yes == true
             }
+            
             test(ref: [value: 2]) {
                 ref([value: 2, yes: false])
             }
@@ -346,7 +349,8 @@ ruleset("milkshake") {
         assert ruleSets
         assert ruleSets.size() == 2
 
-        ruleSets.each { rs ->
+        ruleSets.each { RulesetDelegate rs ->
+            println rs.name
             fails = RulesEngine.testRuleset(rs)
             assert fails.empty
         }

@@ -72,13 +72,8 @@ class RulesetDelegate {
     }
 
     def test(Map map, Closure testClosure) {
-        Map expect = [:]
-        def delegate = new com.nerderg.rules.TestDelegate()
-        delegate.metaClass.methodMissing = {String methodName, args ->
-            expect.put(methodName, args[0])
-        }
-        testClosure.delegate = delegate
-        testClosure()
-        tests.add([input: Collections.unmodifiableMap(map), expect: Collections.unmodifiableMap(expect)])
+        testClosure.delegate = new com.nerderg.rules.TestDelegate()
+        testClosure.resolveStrategy = Closure.DELEGATE_FIRST
+        tests.add([input: Collections.unmodifiableMap(map), expect: testClosure ])
     }
 }

@@ -47,15 +47,11 @@ class RulesEngine {
             if (rules.checkRequired(testData.input)) {
                 Map copy = new HashMap(testData.input)
                 rules.runRules(copy)
-                testData.expect.each {
-                    if (copy[it.key] != it.value) {
-                        fails.add("""In test $i
-expected '${it.key}'
-to be    '${it.value}'
-but was  '${copy[it.key]}'
-in test data '${copy}'
-""")
-                    }
+                testData.expect.delegate.facts = copy
+                try {
+                    testData.expect()
+                } catch (AssertionError e) {
+                    fails.add(e.message)
                 }
             } else {
                 fails.add(testData.input.error)

@@ -20,7 +20,9 @@ package com.nerderg.rules
  */
 class TestDelegate {
 
-    TestDelegate() {
-        // do nothing. this is here to stop idea complaining
+    def facts
+
+    def methodMissing(String name, args) {
+        assert facts[name] == args[0]
     }
 }
