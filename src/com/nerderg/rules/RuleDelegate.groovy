@@ -20,27 +20,43 @@ package com.nerderg.rules
  */
 class RuleDelegate {
 
+    def rulesEngineService
     String name
     Map fact
     Boolean result = false
 
     def when(Closure cl) {
+        cl.delegate = this
+        cl.resolveStrategy = Closure.DELEGATE_FIRST
         result = RulesEngine.with(fact, cl)
     }
 
     def then(Closure cl) {
         if (result) {
+            cl.delegate = this
+            cl.resolveStrategy = Closure.DELEGATE_FIRST
+
             RulesEngine.with(fact, cl)
         }
     }
 
     def otherwise(Closure cl) {
         if (!result) {
+            cl.delegate = this
+            cl.resolveStrategy = Closure.DELEGATE_FIRST
             RulesEngine.with(fact, cl)
         }
     }
 
     def evaluate(Closure cl) {
+        cl.delegate = this
+        cl.resolveStrategy = Closure.DELEGATE_FIRST
         result = RulesEngine.with(fact, cl)
+    }
+
+    def callRuleset(String ruleSetName) {
+        if (rulesEngineService) {
+            rulesEngineService.fireRules(ruleSetName, [fact])
+        }
     }
 }

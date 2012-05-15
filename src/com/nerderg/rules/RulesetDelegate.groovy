@@ -20,6 +20,8 @@ package com.nerderg.rules
  */
 class RulesetDelegate {
 
+    def rulesEngineService
+
     String name
     List<Closure> rules = []
     List required = []
@@ -58,6 +60,7 @@ class RulesetDelegate {
             for (Closure ruleClosure in rules) {
 //                println "- $ruleClosure.name"
                 ruleClosure.fact = fact
+                ruleClosure.rulesEngineService = rulesEngineService
                 ruleClosure()
                 if (!(ruleClosure.result) && abortOnFail) {
                     println "-- failing: $ruleClosure.name result false + fail on error set"
