@@ -25,7 +25,7 @@ class RulesetDelegate {
     String name
     List<Closure> rules = []
     List required = []
-    List tests = []
+    List<Map> tests = []
     boolean abortOnFail = false
 
     def propertyMissing(String name) {

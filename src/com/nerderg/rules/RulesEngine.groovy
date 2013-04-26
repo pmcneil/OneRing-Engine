@@ -42,16 +42,18 @@ class RulesEngine {
     static List testRuleset(RulesetDelegate rules) {
         List<String> fails = []
         int i = 0
-        rules.tests.each { testData ->
+        rules.tests.each { Map testData ->
             i++
             if (rules.checkRequired(testData.input)) {
                 Map copy = new HashMap(testData.input)
                 rules.runRules(copy)
-                testData.expect.delegate.fact = copy
+                Closure testClosure = testData.expect
+                testClosure.fact = copy
+                testClosure.errors = [] //reset errors before run
                 try {
-                    if (!testData.expect() && testData.expect.errors) {
+                    if (!testClosure() && testClosure.errors) {
                         fails.add("Test $i failed" as String)
-                        fails.addAll(testData.expect.errors)
+                        fails.addAll(testClosure.errors)
                         fails.add("Facts: $copy" as String)
                     }
                 } catch (e) {

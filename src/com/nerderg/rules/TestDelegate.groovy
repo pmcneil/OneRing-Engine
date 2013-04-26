@@ -20,11 +20,10 @@ package com.nerderg.rules
  */
 class TestDelegate {
 
-    def fact
-    List<String> errors
+    Map fact
+    List<String> errors = []
 
     def methodMissing(String name, args) {
-        errors = []
         return compareValues(fact[name], args[0])
     }
 
