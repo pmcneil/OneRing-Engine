@@ -40,7 +40,7 @@ class RulesEngine {
     }
 
     static List testRuleset(RulesetDelegate rules) {
-        def fails = []
+        List<String> fails = []
         int i = 0
         rules.tests.each { testData ->
             i++
@@ -49,10 +49,15 @@ class RulesEngine {
                 rules.runRules(copy)
                 testData.expect.delegate.fact = copy
                 try {
-                    testData.expect()
-                } catch (AssertionError e) {
-                    fails.add("Test $i\n$e.message" as String)
+                    if (!testData.expect() && testData.expect.errors) {
+                        fails.add("Test $i failed" as String)
+                        fails.addAll(testData.expect.errors)
+                        fails.add("Facts: $copy" as String)
+                    }
+                } catch (e) {
+                    fails.add("Test $i failed\n$e.message" as String)
                 }
+
             } else {
                 fails.add(testData.input.error)
             }
