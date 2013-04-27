@@ -51,7 +51,8 @@ class RulesEngine {
                 testClosure.fact = copy
                 testClosure.errors = [] //reset errors before run
                 try {
-                    if (!testClosure() && testClosure.errors) {
+                    testClosure()
+                    if (testClosure.errors) {
                         fails.add("Test $i failed" as String)
                         fails.addAll(testClosure.errors)
                         fails.add("Facts: $copy" as String)
