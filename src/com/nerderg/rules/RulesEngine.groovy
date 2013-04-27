@@ -53,7 +53,7 @@ class RulesEngine {
                 try {
                     testClosure()
                     if (testClosure.errors) {
-                        fails.add("Test $i failed" as String)
+                        fails.add("\n-----\nTest $i failed" as String)
                         fails.addAll(testClosure.errors)
                         fails.add("Facts: $copy" as String)
                     }

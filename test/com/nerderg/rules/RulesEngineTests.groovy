@@ -265,7 +265,7 @@ ruleset("milkshake") {
         List<String> fails = RulesEngine.testRuleset(ruleSet)
         assert !fails.empty
 
-        assert fails == ['Test 1 failed', 'Values are not equal:', '(class java.lang.String) failed != (class java.lang.String) passed', 'Facts: [nett_income:400, incomeTest:failed, income:900, expenses:500]']
+        assert fails == ['\n-----\nTest 1 failed', 'Values are not equal:', '(class java.lang.String) failed != (class java.lang.String) passed', 'Facts: [nett_income:400, incomeTest:failed, income:900, expenses:500]']
 
         ruleDsl = """ruleset("Means Test") {
             require(['income', 'expenses'])
